@@ -1,0 +1,346 @@
+/*Všeobecné nastavení a vynulování všech hodnot*/
+/*--------------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6, h7,
+body, p, ul, ol, li,
+blockquote, figure, figcaption,
+dl, dt, dd,
+pre, code,
+form, fieldset, legend,
+input, textarea, select, option,
+button, article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+a {
+    text-decoration: none;
+  }
+
+
+/*Nastavení navbaru*/
+
+nav {
+    width: 100vw;
+    height: 5rem;;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.navLi{
+    color: rgb(122, 122, 122);
+}
+
+.logoNav{
+    height: 80px;
+    margin-left: 150px;
+}
+
+ul{
+      list-style: none;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+nav li{
+    margin-right: 35px;
+}
+
+.navLiCta{
+    background-color: black;
+    padding: 10px  24px;
+    /*border-radius: 15px;*/
+
+    color: white;
+    margin-right: 10rem;
+
+    font-weight: bold;
+}
+.navLiCta:hover{
+    background-color: blueviolet;
+    transform: translateY(-2px);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+
+
+
+/*Nastavení elementu main*/
+
+main{
+    margin-top: 40px;
+    /*background: pink;*/
+  }
+
+.af1Main{
+  height: 600px;
+  width: 750px;
+
+  margin-right: 40px;
+}
+
+.containerMain{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 100px;
+  margin-right: 80px;
+
+  /*background-color: blue;*/
+}
+
+.containerMain h1{
+  font-size:  72px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  /*background-color: beige;*/
+
+  font-family: "Playfair Display", serif;
+}
+
+.paCTA{
+  display: flex;
+  flex-direction: column;
+
+  /*background-color: brown;*/
+}
+
+/*
+.paCTA h1{
+  width: 500px;
+}*/
+
+.ctaBanner{
+  margin-bottom: 75px;
+
+  /*background-color: azure;*/
+}
+
+.pBanner p{
+  color: rgb(122, 122, 122);
+
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/*Stylizace CTA tlacitek (kod neni muj, je z https://uiverse.io/ */
+
+.ShopNow {
+  appearance: none;
+  background-color: #1A1A1A;
+  border: 0.125em solid white;
+  border-radius: 0.9375em;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  min-height: 3.75em;
+  min-width: 0;
+  outline: none;
+  padding: 1em 2.3em;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+
+  margin-right: 10px;
+ }
+ 
+ .ShopNow:disabled {
+  pointer-events: none;
+ }
+ 
+ .ShopNow:hover {
+  color: #1A1A1A;
+  background-color: white;
+  border: 0.125em solid #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+ }
+ 
+ .ShopNow:active {
+  box-shadow: none;
+  transform: translateY(0);
+ }
+
+
+
+
+.viewMore {
+  appearance: none;
+  background-color: transparent;
+  border: 0.125em solid #1A1A1A;
+  border-radius: 0.9375em;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  min-height: 3.75em;
+  min-width: 0;
+  outline: none;
+  padding: 1em 2.3em;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+ }
+ 
+ .viewMore:disabled {
+  pointer-events: none;
+ }
+ 
+ .viewMore:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+ }
+ 
+ .viewMore:active {
+  box-shadow: none;
+  transform: translateY(0);
+ }
+
+
+
+ /*Nastaveni dalsi sekce*/
+
+ .sec2{
+  height: auto;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+ }
+
+.containerSec2{
+  /*background-color: red;*/
+
+  height: 80rem;
+  margin-top: 80px;
+  width: 80%;
+
+  border-radius: 60px 60px 0 0;
+
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.containerSec2 h1{
+  font-family: "Playfair Display", serif;
+  font-size: 72px;
+
+  width: 1000px;
+  
+  margin-top: 60px;
+}
+
+.conSec2Flex{
+  height: auto;
+
+  display: flex;
+  justify-content: center;
+}
+
+#AirForce1{
+  height: 700px;
+}
+
+.textNImG{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.textNImG h2{
+  font-family: "Playfair Display", serif;
+
+  font-size: 3rem;
+
+  margin-bottom: 50px;
+}
+
+#bigImg{
+  height:  340px;
+  width:  340px;
+}
+
+.imagesTwice{
+  margin-top: 100px;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.LeranMore {
+  appearance: none;
+  background-color: transparent;
+  border: 0.125em solid #1A1A1A;
+  border-radius: 0.9375em;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  min-height: 3.75em;
+  width: 180px;
+  outline: none;
+  padding: 1em 2.3em;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+
+  margin-top: 20px;
+ }
+ 
+ .LeranMore:disabled {
+  pointer-events: none;
+ }
+ 
+ .LeranMore:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+ }
+ 
+ .LeranMore:active {
+  box-shadow: none;
+  transform: translateY(0);
+ }
