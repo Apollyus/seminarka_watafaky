@@ -15,6 +15,18 @@
 </head>
 
 <body>
+    <div id="cookieOverlay" class="fixed inset-0 bg-black bg-opacity-50 backdrop-filter backdrop-blur-sm z-10"></div>
+
+    <div id="cookieBanner" class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-200 p-4 text-center rounded-md shadow-lg z-20" style="width: 500px; height: 200px;">
+        <h1 class="text-left text-2xl font-bold">We value your Privacy</h1>
+        <p class="text-sm text-left">
+            We use cookies to enhance your browsing experience,
+            serve personalized ads or content, and analyze our traffic. By clicking "Accept All", you consent to our use of
+            cookies. Cookie Policy.</p>
+        <button id="cookieConsent" class="mt-9 px-4 py-2 bg-blue-500 text-white rounded-xl customShadow2 hover:bg-white hover:text-blue-500 transition duration-300">Souhlasím</button>
+        <button id="cookieConsent" class="mt-2 ml-3 px-4 py-2 bg-white border text-blue-500 rounded-xl customShadow2 hover:bg-blue-600 hover:text-white focus:outline-none transition duration-300">Nesouhlasím</button>
+    </div>
+
     <nav class="bg-white py-4 px-6 flex justify-between items-center">
         <a href="index.html" class="ml-16">
             <img src="./images/F.png" alt="Footwear Heaven logo" class="h-20">
@@ -126,7 +138,7 @@
             
         </div>
     </footer>
+    <script src="app.js"></script>
     
 </body>
-
 </html>

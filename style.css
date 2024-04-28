@@ -374,3 +374,27 @@ main{
       margin-right: 8px;
   }
 }
+
+body {
+  background-image: url('background.jpg'); /* Replace 'background.jpg' with your actual background image */
+  background-size: cover;
+}
+
+#cookieBanner {
+  z-index: 20; /* Ensure the banner is on top of the overlay */
+}
+
+#cookieOverlay {
+  z-index: 10; /* Ensure the overlay is behind the banner */
+}
+
+.cookieOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(100px); /* Increase the blur value here */
+  z-index: 999;
+}
