@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /*Všeobecné nastavení a vynulování všech hodnot*/
 /*--------------------------------------------------------------*/
 
@@ -89,8 +93,8 @@ main{
   }
 
 .af1Main{
-  height: 600px;
-  width: 750px;
+  height: 500px;
+  width: 650px;
 
   margin-right: 40px;
 }
@@ -301,13 +305,14 @@ main{
   justify-content: space-around;
 }
 
+
 .LeranMore {
   appearance: none;
-  background-color: transparent;
+  background-color: #1A1A1A;
   border: 0.125em solid #1A1A1A;
   border-radius: 0.9375em;
   box-sizing: border-box;
-  color: #3B3B3B;
+  color: #fff;
   cursor: pointer;
   display: inline-block;
   font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -326,7 +331,7 @@ main{
   touch-action: manipulation;
   will-change: transform;
 
-  margin-top: 20px;
+  margin-top: 40px;
  }
  
  .LeranMore:disabled {
@@ -334,8 +339,8 @@ main{
  }
  
  .LeranMore:hover {
-  color: #fff;
-  background-color: #1A1A1A;
+  color: #1A1A1A;
+  background-color: transparent;
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
   transform: translateY(-2px);
  }
@@ -344,3 +349,18 @@ main{
   box-shadow: none;
   transform: translateY(0);
  }
+
+.stin1{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  height: 80rem;
+  margin-top: 80px;
+  width: 80%;
+}
+
+.customShadow{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.customShadow2{
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
