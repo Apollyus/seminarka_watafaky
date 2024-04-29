@@ -7,15 +7,16 @@
     <meta name="description" content="We are online store that sells not only sneakers. Come visit us and see!">
     <meta name="keywords" content="sneaker, sneakers, sneakerheads, sneaker shop, sneakers shop, af1, air force 1, force 1">
     <title>Footwear Heaven | Ráj pro naše sneakerheads</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="shortcut icon" href="./images/favicon_shoe.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <div id="cookieOverlay" class="fixed inset-0 bg-black bg-opacity-50 backdrop-filter backdrop-blur-sm z-10"></div>
+<body class="bg-white text-black ">
+    <!-- Cookie banner -->
+    <div id="cookieOverlay" class="fixed inset-0 bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg z-10"></div>
 
     <div id="cookieBanner" class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-200 h-auto w-1/4 text-center rounded-md shadow-lg z-20 p-5">
         <h1 class="text-left text-2xl mb-5 font-bold">We value your Privacy</h1>
@@ -23,10 +24,11 @@
             We use cookies to enhance your browsing experience,
             serve personalized ads or content, and analyze our traffic. By clicking "Accept All", you consent to our use of
             cookies. <a class="text-blue-700 underline hover:text-blue-900 transition duration-300" href="in_progress.html">Cookie Policy.</a></p>
-        <button id="cookieConsent" class="mt-9 px-4 py-2 bg-blue-500 text-white rounded-xl customShadow2 hover:bg-white hover:text-blue-500 transition duration-300">Souhlasím</button>
-        <button id="cookieConsent" class="mt-2 ml-3 px-4 py-2 bg-white border text-blue-500 rounded-xl customShadow2 hover:bg-blue-600 hover:text-white focus:outline-none transition duration-300">Nesouhlasím</button>
+        <button id="cookieConsent" class="mt-9 px-4 py-2 bg-blue-500 text-white rounded-xl customShadow2 hover:bg-white hover:text-blue-500 transition duration-300">Accept All</button>
+        <button id="disagree-button" class="mt-2 ml-3 px-4 py-2 bg-white border text-blue-500 rounded-xl customShadow2 hover:bg-blue-600 hover:text-white focus:outline-none transition duration-300">Dismiss</button>
     </div>
 
+    <!-- Navbar -->
     <nav class="bg-white py-4 px-6 flex justify-between items-center">
         <a href="index.html" class="ml-16">
             <img src="./images/F.png" alt="Footwear Heaven logo" class="h-20">
@@ -40,6 +42,7 @@
         </ul>
     </nav>
 
+    <!-- Main content -->
     <main>
         <div class="py-16 px-36 flex justify-between items-center ">
             <div class="max-w-4xl">
@@ -85,8 +88,6 @@
                         </p>
                     </div>
                 </div>
-
-                <img src="./images/nike-w-air-force-07-damske-tenisky-bila-hf0022-100_4.webp" alt="Damske Airforce 1" class="w-screen">
                 
             </div>
         </section>
@@ -138,7 +139,11 @@
             
         </div>
     </footer>
-    <script src="app.js"></script>
-    
+    <script src="cookieConsent.js"></script>
+    <script>
+            document.getElementById('darkModeToggle').addEventListener('click', function() {
+            document.body.classList.toggle('dark');
+            });
+    </script>
 </body>
 </html>

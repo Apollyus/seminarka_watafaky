@@ -375,11 +375,6 @@ main{
   }
 }
 
-body {
-  background-image: url('background.jpg'); /* Replace 'background.jpg' with your actual background image */
-  background-size: cover;
-}
-
 #cookieBanner {
   z-index: 20; /* Ensure the banner is on top of the overlay */
 }
