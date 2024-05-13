@@ -27,6 +27,9 @@ time, mark, audio, video {
 }
 
 
+html {
+  scroll-behavior: smooth;
+}
 
 a {
     text-decoration: none;
